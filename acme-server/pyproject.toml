@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "acme.core"
+name = "acme.server"
 version = "0.0.1"
 description = ""
 
 [tool.hatch.build.targets.sdist.force-include]
-"../src/acme/core" = "src/acme/core"
+"../src/acme/server" = "src/acme/server"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/acme"]
